@@ -1,4 +1,9 @@
 pipeline {
+    triggers {
+        pollSCM('H/2 * * * *')
+        githubPush()
+    }
+
     agent any
 
     tools {
@@ -44,6 +49,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm run build'
+                sh 'ls dist/main/'
                 sh 'npm run make'
             }
         }
