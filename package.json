@@ -14,6 +14,7 @@
     "@electron-forge/maker-deb": "^7.0.0",
     "@electron-forge/maker-dmg": "^7.0.0",
     "@electron-forge/maker-squirrel": "^7.0.0",
+    "@types/jest": "^30.0.0",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "electron": "^28.0.0",
@@ -28,10 +29,13 @@
     "testEnvironment": "node",
     "reporters": [
       "default",
-      ["jest-junit", {
-        "outputDirectory": "test-results",
-        "outputName": "results.xml"
-      }]
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "test-results",
+          "outputName": "results.xml"
+        }
+      ]
     ]
   }
 }
