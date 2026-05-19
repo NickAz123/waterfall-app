@@ -12,7 +12,7 @@ pipeline {
 
     environment {
         GITHUB_TOKEN = credentials('github-token')
-        DOCKER_IMAGE = "ghcr.io/YOUR_GITHUB_USERNAME/waterfall"
+        DOCKER_IMAGE = "ghcr.io/NickAz123/waterfall"
     }
 
     stages {
