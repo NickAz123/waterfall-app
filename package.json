@@ -2,6 +2,7 @@
   "name": "waterfall",
   "version": "1.0.0",
   "main": "dist/main/index.js",
+  "description": "Log viewing application",
   "scripts": {
     "start": "electron .",
     "build": "tsc",
